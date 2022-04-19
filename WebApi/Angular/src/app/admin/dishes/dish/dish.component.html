@@ -1,0 +1,75 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>{{ pageTitle }}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form novalidate [formGroup]="dishForm">
+
+    <mat-card-content>
+      <div class="form-card">
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Dish Name"
+            formControlName="dishName"
+          />
+        </mat-form-field>
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Dish Description"
+            formControlName="dishDescription"
+          />
+        </mat-form-field>
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Dish Price"
+            formControlName="dishPrice"
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>DishStatuses</mat-label>
+               <mat-select formControlName="dishStatusId">
+           <mat-option 
+           #matOprion (click)=ChosedStatus(dishStatus)
+          *ngFor="let dishStatus of dishStatuses" 
+          [value]="dishStatus.id">
+              {{dishStatus.dishStatusName}}</mat-option>
+              </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>DishCategories</mat-label>
+               <mat-select formControlName="dishCategoryId">
+           <mat-option 
+           #matOprion (click)=ChosedCategory(dishCategory)
+          *ngFor="let dishCategory of dishCategories" 
+          [value]="dishCategory.id">
+              {{dishCategory.dishCategoryName}}</mat-option>
+              </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-100">
+          <mat-label>Ingredients</mat-label>
+          <mat-select formControlName="ingredientsId" multiple>
+            <mat-option
+              *ngFor="let ingredient of ingredients"
+              [value]="ingredient.id"
+              >{{ ingredient.ingredientName }} --> {{ ingredient.ingredientDescription }}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+        
+      </div>
+    </mat-card-content>
+  </form>
+</mat-card>

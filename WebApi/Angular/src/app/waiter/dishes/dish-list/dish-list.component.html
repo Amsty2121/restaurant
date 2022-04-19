@@ -1,0 +1,111 @@
+<!-- <mat-sidenav-container> -->
+  <mat-card class="light" style="height: 100%">
+    <mat-card-header>
+      <mat-card-title class="view-card-title">
+        <h1>Dishes</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <mat-form-field>
+          <mat-placeholder>
+            <mat-icon>subject</mat-icon>
+            <b> Search</b>
+          </mat-placeholder>
+          <input
+            matInput
+            [formControl]="searchInput"
+            (keyup.enter)="applySearch()"
+          />
+        </mat-form-field>
+        <span class="title-spacer"></span>
+
+        <button
+          mat-mini-fab
+          style="margin-right: 10px; background-color: darkgray"
+          [routerLink]="['/waiter/dish-list']"
+          (click)="loadDishesFromApi()"
+        >
+          <mat-icon>refresh</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-table
+      #table
+      [dataSource]="$any(pagedDishes?.items)"
+      matSort
+      matSortActive="DishName"
+      matSortDirection="asc"
+    >
+
+      <ng-container matColumnDef="DishName">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          DishName
+        </mat-header-cell>
+        <mat-cell *matCellDef="let dish" >
+          {{ dish.dishName }}
+        </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="DishDescription">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Description
+        </mat-header-cell>
+        <mat-cell *matCellDef="let dish" >
+          {{ dish.dishDescription }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="DishPrice">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+          Price
+        </mat-header-cell>
+        <mat-cell *matCellDef="let dish" >
+          {{ dish.dishPrice }} $
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="DishStatus">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+            DishStatus
+        </mat-header-cell>
+        <mat-cell *matCellDef="let dish" >
+          {{ dish.dishStatus.dishStatusName }}
+        </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="DishCategory">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>
+            DishCategory
+        </mat-header-cell>
+        <mat-cell *matCellDef="let dish" >
+          {{ dish.dishCategory.dishCategoryName }}
+        </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="Id">
+        <mat-header-cell *matHeaderCellDef style="justify-content: right">
+          <button
+            mat-button
+            style="color: white; background-color: darkgrey"
+            (click)="resetGrid()"
+          >
+            Reset
+          </button>
+        </mat-header-cell>
+        <mat-cell *matCellDef="let dish" style="justify-content: right">
+          
+        </mat-cell>
+      </ng-container>
+  
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+    </mat-table>
+  
+    <mat-paginator
+      [length]="pagedDishes?.total"
+      [pageSizeOptions]="[5, 10, 25, 50]"
+      pageSize="5"
+    ></mat-paginator>
+  </mat-card>

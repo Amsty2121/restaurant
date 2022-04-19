@@ -1,0 +1,65 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title class="view-card-title">
+        <h1>Edit Kitchener for order dish : {{currentOrder.dishName}}</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <form novalidate [formGroup]="orderForm" (ngSubmit)="saveOrder()">
+      <mat-toolbar style="background-color: #fff">
+        <mat-toolbar-row>
+          <span class="title-spacer"></span>
+  
+          <mat-card-actions>
+            <button
+              mat-mini-fab
+              class="primary"
+              style="margin-right: 10px; background-color: darkgray"
+              type="submit"
+              [disabled]="!orderForm.valid"
+            >
+              <mat-icon>save</mat-icon>
+            </button>
+            <button
+              mat-mini-fab
+              class=""
+              style="margin-right: 10px"
+              [routerLink]="['/kitchener/order-list']"
+            >
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  
+      <mat-card-content>
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>Kitchener</mat-label>
+          <mat-select formControlName="kitchenerId">
+            <mat-option
+              *ngFor="let kitchener of kitcheners"
+              [value]="kitchener.id"
+              >{{ kitchener.firstName}} {{ kitchener.lastName}}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>OrderStatus</mat-label>
+          <mat-select formControlName="orderStatusId">
+            <mat-option
+              *ngFor="let orderStatus of orderStatuses"
+              [value]="orderStatus.id"
+              >{{orderStatus.orderStatusName}}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+        
+      </mat-card-content>
+  
+          
+  
+          
+  
+    </form>
+  </mat-card>
+  

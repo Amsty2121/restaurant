@@ -1,0 +1,70 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title class="view-card-title">
+        <h1>{{ pageTitle }}</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <form novalidate [formGroup]="tableForm" (ngSubmit)="saveTable()">
+      <mat-toolbar style="background-color: #fff">
+        <mat-toolbar-row>
+          <span class="title-spacer"></span>
+  
+          <mat-card-actions>
+            <button
+              mat-mini-fab
+              class="primary"
+              style="margin-right: 10px; background-color: darkgray"
+              type="submit"
+              [disabled]="!tableForm.valid"
+            >
+              <mat-icon>save</mat-icon>
+            </button>
+            <button
+              mat-mini-fab
+              class=""
+              style="margin-right: 10px"
+              [routerLink]="['/admin/table-list']"
+            >
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  
+      <mat-card-content>
+        <div class="form-card">
+          <mat-form-field class="form-field-90">
+            <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Table Description"
+            formControlName="tableDescription"
+            />
+            <mat-error *ngIf="tableDescription?.hasError('maxlength')">
+                Table Description must contain at most <strong>500 characters</strong>
+              </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-field-50">
+            <mat-label>Status</mat-label>
+            <mat-select formControlName="tableStatusId">
+              <mat-option *ngFor="let tableStatus of tableStatuses" 
+              [value]="tableStatus.id">{{
+                tableStatus.tableStatusName
+              }}</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-field-50">
+            <mat-label>Waiter</mat-label>
+            <mat-select formControlName="waiterId">
+              <mat-option *ngFor="let waiter of waiters" 
+              [value]="waiter.id">
+                  {{waiter.firstName}} {{waiter.lastName}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        </div>
+      </mat-card-content>
+    </form>
+  </mat-card>
+  

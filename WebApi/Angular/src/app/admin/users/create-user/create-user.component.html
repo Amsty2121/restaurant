@@ -1,0 +1,153 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>Create user</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form [formGroup]="userForm" (ngSubmit)="createUser()">
+    <mat-toolbar style="background-color: #fff">
+      <mat-toolbar-row>
+        <span class="title-spacer"></span>
+
+        <mat-card-actions>
+          <button
+            mat-mini-fab
+            class="primary"
+            style="margin-right: 10px; background-color: darkgray"
+            type="submit"
+            [disabled]="!userForm.valid"
+          >
+            <mat-icon>save</mat-icon>
+          </button>
+          <button
+            mat-mini-fab
+            class=""
+            style="margin-right: 10px"
+            [routerLink]="['/users']"
+          >
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-form-field appearance="fill">
+      <mat-label>User role</mat-label>
+      <mat-select [(value)]="selectedRole" #role>
+        <div *ngFor="let role of roles">
+          <mat-option value="{{ role.roleName }}">{{
+            role.roleName
+          }}</mat-option>
+        </div>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="form-field-90">
+      <input
+        matInput
+        type="text"
+        autocomplete="off"
+        [errorStateMatcher]="namesErrorMatcher"
+        placeholder="Username"
+        formControlName="username"
+      />
+      <mat-error *ngIf="username?.hasError('required')">
+        Username is <strong>required</strong>
+      </mat-error>
+      <mat-error *ngIf="username?.hasError('maxlength')">
+        Username must have at most <strong>50 characters</strong>
+      </mat-error>
+      <mat-error *ngIf="username?.hasError('minlength')">
+        Username must have at least <strong>3 characters</strong>
+      </mat-error>
+      <mat-error *ngIf="username?.hasError('uniqueUsername')">
+        This username is taken by another user
+      </mat-error>
+      <mat-error *ngIf="username?.hasError('pattern')">
+        The username must contain only letters and numbers
+      </mat-error>
+    </mat-form-field>
+
+    <div formGroupName="passwords">
+      <mat-form-field class="form-field-90">
+        <input
+          matInput
+          type="password"
+          [errorStateMatcher]="passwordErrorMatcher"
+          placeholder="Password"
+          formControlName="password"
+        />
+        <mat-error *ngIf="password?.hasError('required')">
+          The password is <strong>required</strong>
+        </mat-error>
+        <mat-error *ngIf="password?.hasError('maxlength')">
+          The password must have at most <strong>50 characters</strong>
+        </mat-error>
+        <mat-error *ngIf="password?.hasError('minlength')">
+          The password must have at least <strong>3 characters</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="form-field-90">
+        <input
+          matInput
+          type="password"
+          [errorStateMatcher]="passwordErrorMatcher"
+          placeholder="Repeated password"
+          formControlName="repeatedPassword"
+        />
+        <mat-error *ngIf="repeatedPassword?.hasError('required')">
+          The repeated password is <strong>required</strong>
+        </mat-error>
+        <mat-error *ngIf="repeatedPassword?.hasError('maxlength')">
+          The repeated password must have at most <strong>50 characters</strong>
+        </mat-error>
+        <mat-error *ngIf="repeatedPassword?.hasError('minlength')">
+          The repeated password must have at least <strong>3 characters</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <mat-form-field class="form-field-90">
+      <input
+        matInput
+        type="text"
+        autocomplete="off"
+        [errorStateMatcher]="namesErrorMatcher"
+        placeholder="First name"
+        formControlName="firstName"
+      />
+      <mat-error *ngIf="firstName?.hasError('required')">
+        The first name is <strong>required</strong>
+      </mat-error>
+      <mat-error *ngIf="firstName?.hasError('maxlength')">
+        The first name must have at most <strong>50 characters</strong>
+      </mat-error>
+      <mat-error *ngIf="firstName?.hasError('minlength')">
+        The first name must have at least <strong>3 characters</strong>
+      </mat-error>
+      <mat-error *ngIf="firstName?.hasError('pattern')">
+        The first name must contain only letters
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="form-field-90">
+      <input
+        matInput
+        type="text"
+        autocomplete="off"
+        [errorStateMatcher]="namesErrorMatcher"
+        placeholder="Last name"
+        formControlName="lastName"
+      />
+      <mat-error *ngIf="lastName?.hasError('required')">
+        The last name is <strong>required</strong>
+      </mat-error>
+      <mat-error *ngIf="lastName?.hasError('maxlength')">
+        The last name must have at most <strong>50 characters</strong>
+      </mat-error>
+      <mat-error *ngIf="lastName?.hasError('minlength')">
+        The last name must have at least <strong>3 characters</strong>
+      </mat-error>
+      <mat-error *ngIf="lastName?.hasError('pattern')">
+        The last name must contain only letters
+      </mat-error>
+    </mat-form-field>
+  </form>
+</mat-card>

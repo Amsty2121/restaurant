@@ -1,0 +1,96 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>{{ pageTitle }}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form novalidate [formGroup]="courseForm" (ngSubmit)="saveCourse()">
+    <mat-toolbar style="background-color: #fff">
+      <mat-toolbar-row>
+        <span class="title-spacer"></span>
+
+        <mat-card-actions>
+          <button
+            mat-mini-fab
+            class="primary"
+            style="margin-right: 10px; background-color: darkgray"
+            type="submit"
+            [disabled]="!courseForm.valid"
+          >
+            <mat-icon>save</mat-icon>
+          </button>
+          <button
+            mat-mini-fab
+            class=""
+            style="margin-right: 10px"
+            [routerLink]="['/admin/books']"
+          >
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card-content>
+      <div class="form-card">
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Course Name"
+            formControlName="courseName"
+          />
+          <mat-error *ngIf="courseName?.hasError('required')">
+            Course name is <strong>required</strong>
+          </mat-error>
+          <mat-error *ngIf="courseName?.hasError('minlength')">
+            Course name must contain at least <strong>3 characters</strong>
+          </mat-error>
+          <mat-error *ngIf="courseName?.hasError('maxlength')">
+            Course name must contain at most <strong>250 characters</strong>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-field-90">
+          <textarea
+            matInput
+            placeholder="Course description"
+            formControlName="courseDescription"
+            [matTextareaAutosize]="true"
+          ></textarea>
+          <mat-error *ngIf="courseDescription?.hasError('required')">
+            Course description is <strong>required</strong>
+          </mat-error>
+          <mat-error *ngIf="courseDescription?.hasError('minlength')">
+            Course description must contain at least
+            <strong>3 characters</strong>
+          </mat-error>
+          <mat-error *ngIf="courseDescription?.hasError('maxlength')">
+            Course description must contain at most
+            <strong>500 characters</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>Professors</mat-label>
+          <mat-select formControlName="professorsId" multiple>
+            <mat-option
+              *ngFor="let professor of professors"
+              [value]="professor.id"
+              >{{ professor.firstName }} {{ professor.lastName }}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>Groups</mat-label>
+          <mat-select formControlName="groupsId" multiple>
+            <mat-option *ngFor="let group of groups" [value]="group.id">{{
+              group.groupName
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+  </form>
+</mat-card>

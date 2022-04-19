@@ -1,0 +1,42 @@
+<div id="container" class="container">
+  <div class="grandParentContaniner">
+    <div class="parentContainer">
+      <form
+        novalidate
+        class="loginForm"
+        [formGroup]="userLoginForm"
+        (ngSubmit)="login()"
+      >
+        <div>
+          <h2>Login In Restaurant</h2>
+          <div class="error-msg">{{ errorMsg }}</div>
+          <mat-form-field style="display: block">
+            <input
+              matInput
+              type="text"
+              placeholder="User Name"
+              formControlName="username"
+              autocomplete="off"
+            />
+            <mat-error *ngIf="username?.hasError('required')">
+              This username is required
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field style="display: block">
+            <input
+              matInput
+              type="password"
+              placeholder="Password"
+              formControlName="password"
+            />
+            <mat-error *ngIf="password?.hasError('required')">
+              This password is required
+            </mat-error>
+          </mat-form-field>
+          <button mat-raised-button>Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

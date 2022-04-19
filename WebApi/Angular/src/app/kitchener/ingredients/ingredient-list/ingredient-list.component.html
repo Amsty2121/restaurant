@@ -1,0 +1,116 @@
+<!-- <mat-sidenav-container> -->
+    <mat-card class="light" style="height: 100%">
+        <mat-card-header>
+          <mat-card-title class="view-card-title">
+            <h1>Ingredients</h1>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-toolbar>
+          <mat-toolbar-row>
+            <mat-form-field>
+              <mat-placeholder>
+                <mat-icon>subject</mat-icon>
+                <b> Search</b>
+              </mat-placeholder>
+              <input
+                matInput
+                [formControl]="searchInput"
+                (keyup.enter)="applySearch()"
+              />
+            </mat-form-field>
+            <span class="title-spacer"></span>
+    
+            <button
+              mat-mini-fab
+              style="margin-right: 10px; background-color: darkgray"
+              [routerLink]="['/kitchener/ingredient-list']"
+              (click)="loadIngredientsFromApi()"
+            >
+              <mat-icon>refresh</mat-icon>
+            </button>
+          </mat-toolbar-row>
+        </mat-toolbar>
+    
+        <mat-table
+          #table
+          [dataSource]="$any(pagedIngredients?.items)"
+          matSort
+          matSortActive="IngredientName"
+          matSortDirection="asc"
+        >
+    
+          <ng-container matColumnDef="IngredientName">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+              Name
+            </mat-header-cell>
+            <mat-cell *matCellDef="let ingredient" >
+              {{ ingredient.ingredientName }}
+            </mat-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="IngredientDescription">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+              Description
+            </mat-header-cell>
+            <mat-cell *matCellDef="let ingredient" >
+              {{ ingredient.ingredientDescription }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="IngredientStatus">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                IngredientStatus
+            </mat-header-cell>
+            <mat-cell *matCellDef="let ingredient" >
+              {{ ingredient.ingredientStatus.ingredientStatusName }}
+            </mat-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="Id">
+            <mat-header-cell *matHeaderCellDef style="justify-content: right">
+              <button
+                mat-button
+                style="color: white; background-color: darkgrey"
+                (click)="resetGrid()"
+              >
+                Reset
+              </button>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let ingredient" style="justify-content: right">
+              
+            </mat-cell>
+          </ng-container>
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+      
+        <!--mat-paginator
+          [length]="pagedCourses?.total"
+          [pageSizeOptions]="[5, 10, 25, 50]"
+          pageSize="5"
+        ></mat-paginator-->
+        <mat-paginator
+          [length]="pagedIngredients?.total"
+          [pageSizeOptions]="[5, 10, 25, 50]"
+          pageSize="5"
+        ></mat-paginator>
+      </mat-card>
+
+      
+
+
+
+
+
+      <!--div *ngFor="let ingredient of ingredients">
+        {{ ingredient.id }} 
+        {{ ingredient.ingredientName }} 
+        {{ingredient.ingredientDescription}}
+        {{ ingredient.ingredientStatusId }} 
+        {{ingredient.ingredientStatusName}}&nbsp;
+      </div>
+      <div>{{ingredient.ingredientName}}</div-->
+
+
+      

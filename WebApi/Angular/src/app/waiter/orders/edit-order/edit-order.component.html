@@ -1,0 +1,111 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title class="view-card-title">
+        <h1>{{ pageTitle }}</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <form novalidate [formGroup]="orderForm" (ngSubmit)="saveOrder()">
+      <mat-toolbar style="background-color: #fff">
+        <mat-toolbar-row>
+          <span class="title-spacer"></span>
+  
+          <mat-card-actions>
+            <button
+              mat-mini-fab
+              class="primary"
+              style="margin-right: 10px; background-color: darkgray"
+              type="submit"
+              [disabled]="!orderForm.valid"
+            >
+              <mat-icon>save</mat-icon>
+            </button>
+            <button
+              mat-mini-fab
+              class=""
+              style="margin-right: 10px"
+              [routerLink]="['/waiter/order-list']"
+            >
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  
+      <mat-card-content>
+        <div class="form-card">
+          <mat-form-field class="form-field-90">
+            <input
+              matInput
+              type="text"
+              autocomplete="off"
+              placeholder="DishNrPortions"
+              formControlName="orderNrPortions"
+            />
+            <mat-error *ngIf="orderNrPortions?.hasError('required')">
+                OrderNrPortions is <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="orderNrPortions?.hasError('min')">
+                OrderNrPortions should be <strong> bigger then 0</strong>
+            </mat-error>
+            <mat-error *ngIf="orderNrPortions?.hasError('max')">
+                OrderNrPortions should be <strong>not bigger then 10</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="form-field-90">
+            <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Order Description"
+            formControlName="orderDescription"
+            />
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="form-field-100">
+            <mat-label>Dish</mat-label>
+            <mat-select formControlName="dishId">
+              <mat-option
+                *ngFor="let dish of dishes"
+                [value]="dish.id"
+                >{{ dish.dishName}} --> {{ dish.dishDescription }}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+
+      <mat-form-field appearance="fill" class="form-field-50">
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="orderStatusId">
+          <mat-option *ngFor="let orderStatus of orderStatuses" [value]="orderStatus.id">
+              {{
+            orderStatus.orderStatusName
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+          <mat-form-field appearance="fill" class="form-field-50">
+            <mat-label>Table</mat-label>
+            <mat-select formControlName="tableId">
+              <mat-option
+                *ngFor="let table of tables"
+                [value]="table.id"
+                >Nr {{ table.id}}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="form-field-50">
+            <mat-label>waiter</mat-label>
+            <mat-select formControlName="waiterId">
+              <mat-option
+                *ngFor="let waiter of waiters"
+                [value]="waiter.id"
+                >{{ waiter.firstName}} {{ waiter.lastName}}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+    </form>
+  </mat-card>
+  

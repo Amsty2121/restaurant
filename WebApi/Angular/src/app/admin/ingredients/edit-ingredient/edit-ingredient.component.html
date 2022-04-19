@@ -1,0 +1,82 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title class="view-card-title">
+        <h1>{{ pageTitle }}</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <form novalidate [formGroup]="ingredientForm" (ngSubmit)="saveIngredient()">
+      <mat-toolbar style="background-color: #fff">
+        <mat-toolbar-row>
+          <span class="title-spacer"></span>
+  
+          <mat-card-actions>
+            <button
+              mat-mini-fab
+              class="primary"
+              style="margin-right: 10px; background-color: darkgray"
+              type="submit"
+              [disabled]="!ingredientForm.valid"
+            >
+              <mat-icon>save</mat-icon>
+            </button>
+          
+            <button
+              mat-mini-fab
+              class=""
+              style="margin-right: 10px"
+              [routerLink]="['/admin/ingredient-list']"
+            >
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-card-actions>
+        </mat-toolbar-row>
+      </mat-toolbar>
+  
+      <mat-card-content>
+        <div class="form-card">
+          <mat-form-field class="form-field-90">
+            <input
+              matInput
+              type="text"
+              autocomplete="off"
+              placeholder="Ingredient Name"
+              formControlName="ingredientName"
+            />
+            <mat-error *ngIf="ingredientName?.hasError('minlength')">
+                Ingredient name must contain at least <strong>3 characters</strong>
+            </mat-error>
+            <mat-error *ngIf="ingredientName?.hasError('maxlength')">
+                Ingredient name must contain at most <strong>250 characters</strong>
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="form-field-90">
+            <input
+              matInput
+              type="text"
+              autocomplete="off"
+              placeholder="Ingredient Description"
+              formControlName="ingredientDescription"
+            />
+            <mat-error *ngIf="ingredientDescription?.hasError('maxlength')">
+                Ingredient description must contain at most
+              <strong>500 characters</strong>
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill" class="form-field-50">
+            <mat-label>IngredientStatuses</mat-label>
+                 <mat-select formControlName="ingredientStatusId">
+             <mat-option 
+             #matOprion (click)=Chosed(ingredientStatus)
+            *ngFor="let ingredientStatus of ingredientStatuses" 
+            [value]="ingredientStatus.id">
+                {{ingredientStatus.ingredientStatusName}}</mat-option>
+                </mat-select>
+          </mat-form-field>
+        
+
+        </div>
+      </mat-card-content>
+    </form>
+  </mat-card>
+  

@@ -1,0 +1,144 @@
+<!-- <mat-sidenav-container> -->
+    <mat-card class="light" style="height: 100%">
+        <mat-card-header>
+          <mat-card-title class="view-card-title">
+            <h1>Tables</h1>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-toolbar>
+          <mat-toolbar-row>
+            <mat-form-field>
+              <mat-placeholder>
+                <mat-icon>subject</mat-icon>
+                <b> Search</b>
+              </mat-placeholder>
+              <input
+                matInput
+                [formControl]="searchInput"
+                (keyup.enter)="applySearch()"
+              />
+            </mat-form-field>
+            <span class="title-spacer"></span>
+            <button
+              mat-mini-fab
+              style="margin-right: 10px; background-color: #e07c9e"
+              [routerLink]="['/admin/edit-table', 0]"
+            >
+              <mat-icon>add</mat-icon>
+            </button>
+            <button
+              mat-mini-fab
+              style="margin-right: 10px; background-color: darkgray"
+              [routerLink]="['/admin/table-list']"
+              (click)="loadTablesFromApi()"
+            >
+              <mat-icon>refresh</mat-icon>
+            </button>
+          </mat-toolbar-row>
+        </mat-toolbar>
+    
+        <mat-table
+          #table
+          [dataSource]="$any(pagedTables?.items)"
+          matSort
+          matSortActive="TableDescription"
+          matSortDirection="asc"
+        >
+    
+          <ng-container matColumnDef="TableNumber">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+              TableNumber
+            </mat-header-cell>
+            <mat-cell *matCellDef="let table">
+              {{table.id }}
+            </mat-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="TableDescription">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+              Description
+            </mat-header-cell>
+            <mat-cell *matCellDef="let table">
+              {{ table.tableDescription }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="TableStatus">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                TableStatus
+            </mat-header-cell>
+            <mat-cell *matCellDef="let table">
+              {{ table.tableStatus.tableStatusName }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="Waiter">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                WaiterName
+            </mat-header-cell>
+            <mat-cell *matCellDef="let table">
+              {{ table.waiter.firstName }} {{ table.waiter.aastName }}
+            </mat-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="Id">
+            <mat-header-cell *matHeaderCellDef style="justify-content: right">
+              <button
+                mat-button
+                style="color: white; background-color: darkgrey"
+                (click)="resetGrid()"
+              >
+                Reset
+              </button>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let table" style="justify-content: right">
+              <button
+                mat-mini-fab
+                style="background-color: teal; min-height: 30px; margin: 5px"
+                [routerLink]="['/admin/edit-table', table.id]"
+              >
+                <mat-icon>edit</mat-icon>
+              </button>
+              <button
+                mat-mini-fab
+                style="background-color: lightblue; min-height: 30px; margin: 5px"
+                (click)="openDialogForDeleting(table.id)"
+              >
+                <mat-icon>delete</mat-icon>
+              </button>
+            </mat-cell>
+          </ng-container>
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+      
+        <!--mat-paginator
+          [length]="pagedCourses?.total"
+          [pageSizeOptions]="[5, 10, 25, 50]"
+          pageSize="5"
+        ></mat-paginator-->
+        <mat-paginator
+          [length]="pagedTables?.total"
+          [pageSizeOptions]="[5, 10, 25, 50]"
+          pageSize="5"
+        ></mat-paginator>
+      </mat-card>
+
+      
+
+
+
+
+
+      <!--div *ngFor="let ingredient of ingredients">
+        {{ ingredient.id }} 
+        {{ ingredient.ingredientName }} 
+        {{ingredient.ingredientDescription}}
+        {{ ingredient.ingredientStatusId }} 
+        {{ingredient.ingredientStatusName}}&nbsp;
+      </div>
+      <div>{{ingredient.ingredientName}}</div-->
+
+
+      

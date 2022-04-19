@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>Ingredients for dish : {{currentDish.dishName}}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form novalidate [formGroup]="dishForm" (ngSubmit)="saveDish()">
+    <mat-toolbar style="background-color: #fff">
+      <mat-toolbar-row>
+        <span class="title-spacer"></span>
+
+        <mat-card-actions>
+          <button
+            mat-mini-fab
+            class=""
+            style="margin-right: 10px"
+            [routerLink]="['/kitchener/dish-list']"
+          >
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card-content>
+      <mat-form-field appearance="fill" class="form-field-100">
+        <mat-label>Ingredients</mat-label>
+        <mat-select formControlName="ingredientsId" multiple>
+          <mat-option
+            *ngFor="let ingredient of ingredients"
+            [value]="ingredient.id"
+            >{{ ingredient.ingredientName}} --> {{ ingredient.ingredientDescription }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+
+    
+
+  </form>
+</mat-card>

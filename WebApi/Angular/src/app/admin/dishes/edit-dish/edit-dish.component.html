@@ -1,0 +1,112 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>{{ pageTitle }}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form novalidate [formGroup]="dishForm" (ngSubmit)="saveDish()">
+    <mat-toolbar style="background-color: #fff">
+      <mat-toolbar-row>
+        <span class="title-spacer"></span>
+
+        <mat-card-actions>
+          <button
+            mat-mini-fab
+            class="primary"
+            style="margin-right: 10px; background-color: darkgray"
+            type="submit"
+            [disabled]="!dishForm.valid"
+          >
+            <mat-icon>save</mat-icon>
+          </button>
+          <button
+            mat-mini-fab
+            class=""
+            style="margin-right: 10px"
+            [routerLink]="['/admin/dish-list']"
+          >
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card-content>
+      <div class="form-card">
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Dish Name"
+            formControlName="dishName"
+          />
+          <mat-error *ngIf="dishName?.hasError('required')">
+            Dish name is <strong>required</strong>
+          </mat-error>
+          <mat-error *ngIf="dishName?.hasError('minlength')">
+            Dish name must contain at least <strong>3 characters</strong>
+          </mat-error>
+          <mat-error *ngIf="dishName?.hasError('maxlength')">
+            Dish name must contain at most <strong>50 characters</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Dish Price"
+            formControlName="dishPrice"
+          />
+          <mat-error *ngIf="dishPrice?.hasError('required')">
+            Dish Price is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="form-field-90">
+          <input
+          matInput
+          type="text"
+          autocomplete="off"
+          placeholder="Dish Description"
+          formControlName="dishDescription"
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>Category</mat-label>
+          <mat-select formControlName="dishCategoryId">
+            <mat-option
+              *ngFor="let dishCategory of dishCategories"
+              [value]="dishCategory.id"
+              >{{ dishCategory.dishCategoryName}}</mat-option
+            >
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="dishStatusId">
+            <mat-option *ngFor="let dishStatus of dishStatuses" [value]="dishStatus.id">{{
+              dishStatus.dishStatusName
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+
+    <mat-form-field appearance="fill" class="form-field-100">
+      <mat-label>Ingredients</mat-label>
+      <mat-select formControlName="ingredientsId" multiple>
+        <mat-option
+          *ngFor="let ingredient of ingredients"
+          [value]="ingredient.id"
+          >{{ ingredient.ingredientName}} --> {{ ingredient.ingredientDescription }}</mat-option
+        >
+      </mat-select>
+    </mat-form-field>
+
+  </form>
+</mat-card>

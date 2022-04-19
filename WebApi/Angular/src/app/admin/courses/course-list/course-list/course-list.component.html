@@ -1,0 +1,119 @@
+<!-- <mat-sidenav-container> -->
+<mat-card class="light" style="height: 100%">
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>Courses</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <mat-form-field>
+        <mat-placeholder>
+          <mat-icon>subject</mat-icon>
+          <b> Search</b>
+        </mat-placeholder>
+        <input
+          matInput
+          [formControl]="searchInput"
+          (keyup.enter)="applySearch()"
+        />
+      </mat-form-field>
+      <span class="title-spacer"></span>
+      <button
+        mat-mini-fab
+        style="margin-right: 10px; background-color: #e07c9e"
+        [routerLink]="['/admin/editCourse', 0]"
+      >
+        <mat-icon>add</mat-icon>
+      </button>
+      <button
+        mat-mini-fab
+        style="margin-right: 10px; background-color: darkgray"
+        (click)="loadCoursesFromApi()"
+      >
+        <mat-icon>refresh</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-table
+    #table
+    [dataSource]="$any(pagedCourses?.items)"
+    matSort
+    matSortActive="CourseName"
+    matSortDirection="asc"
+  >
+    <ng-container matColumnDef="CourseName">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Name
+      </mat-header-cell>
+      <mat-cell *matCellDef="let course" [routerLink]="['subjects', course.id]">
+        {{ course.courseName }}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="CourseDescription">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>
+        Description
+      </mat-header-cell>
+      <mat-cell *matCellDef="let course" [routerLink]="['subjects', course.id]">
+        {{ course.courseDescription }}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Professors">
+      <mat-header-cell *matHeaderCellDef> Professors </mat-header-cell>
+      <mat-cell *matCellDef="let course" [routerLink]="['subjects', course.id]">
+        <div *ngFor="let professors of course.professors">
+          {{ professors.firstName }} {{ professors.lastName }} &nbsp;
+        </div>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Groups">
+      <mat-header-cell *matHeaderCellDef> Groups </mat-header-cell>
+      <mat-cell *matCellDef="let course" [routerLink]="['subjects', course.id]">
+        <div *ngFor="let group of course.groups">
+          {{ group.groupName }} &nbsp;
+        </div>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="Id">
+      <mat-header-cell *matHeaderCellDef style="justify-content: right">
+        <button
+          mat-button
+          style="color: white; background-color: darkgrey"
+          (click)="resetGrid()"
+        >
+          Reset
+        </button>
+      </mat-header-cell>
+      <mat-cell *matCellDef="let course" style="justify-content: right">
+        <button
+          mat-mini-fab
+          style="background-color: teal; min-height: 30px; margin: 5px"
+          [routerLink]="['/admin/editCourse', course.id]"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button
+          mat-mini-fab
+          style="background-color: lightblue; min-height: 30px; margin: 5px"
+          (click)="openDialogForDeleting(course.id)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+  </mat-table>
+
+  <mat-paginator
+    [length]="pagedCourses?.total"
+    [pageSizeOptions]="[5, 10, 25, 50]"
+    pageSize="5"
+  ></mat-paginator>
+</mat-card>

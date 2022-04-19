@@ -1,0 +1,138 @@
+<!-- <mat-sidenav-container> -->
+    <mat-card class="light" style="height: 100%">
+        <mat-card-header>
+          <mat-card-title class="view-card-title">
+            <h1>Orders</h1>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-toolbar>
+          <mat-toolbar-row>
+            <mat-form-field>
+              <mat-placeholder>
+                <mat-icon>subject</mat-icon>
+                <b> Search</b>
+              </mat-placeholder>
+              <input
+                matInput
+                [formControl]="searchInput"
+                (keyup.enter)="applySearch()"
+              />
+            </mat-form-field>
+            <span class="title-spacer"></span>
+
+            <button
+              mat-mini-fab
+              style="margin-right: 10px; background-color: darkgray"
+              [routerLink]="['/kitchener/order-list']"
+              (click)="loadOrdersFromApi()"
+            >
+              <mat-icon>refresh</mat-icon>
+            </button>
+          </mat-toolbar-row>
+        </mat-toolbar>
+
+        <mat-table
+          #table
+          [dataSource]="$any(pagedOrders?.items)"
+          matSort
+          matSortActive="OrderDescription"
+          matSortDirection="asc"
+        >
+        <ng-container matColumnDef="Dish">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                OrderDishName
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+              {{ order.dish.dishName }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="OrderNrPortions">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+              NrPortions
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+              {{ order.orderNrPortions }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="OrderDescription">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+              Description
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+              {{ order.orderDescription }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="OrderStatus">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                OrderStatus
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+              {{ order.orderStatus.orderStatusName }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="Table">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                TableNr
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+                  Nr {{ order.table.id }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="Waiter">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                WaiterName
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+              {{ order.waiter.firstName }} {{ order.waiter.lastName }}
+            </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="Kitchener">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                KitchenerName
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" >
+              {{ order.kitchener.firstName }} {{ order.kitchener.lastName }}
+            </mat-cell>
+          </ng-container>
+      
+          <ng-container matColumnDef="Id">
+            <mat-header-cell *matHeaderCellDef style="justify-content: right">
+              <button
+                mat-button
+                style="color: white; background-color: darkgrey"
+                (click)="resetGrid()"
+              >
+                Reset
+              </button>
+            </mat-header-cell>
+            <mat-cell *matCellDef="let order" style="justify-content: right">
+                        
+              <button
+                mat-mini-fab
+                style="background-color: teal; min-height: 30px; margin: 5px"
+                [routerLink]="['/kitchener/edit-order', order.id]"
+              >
+                <mat-icon>edit</mat-icon>
+              </button>
+            </mat-cell>
+          </ng-container>
+      
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+        </mat-table>
+
+        <mat-paginator
+          [length]="pagedOrders?.total"
+          [pageSizeOptions]="[5, 10, 25, 50]"
+          pageSize="5"
+        ></mat-paginator>
+      </mat-card>
+
+
+      

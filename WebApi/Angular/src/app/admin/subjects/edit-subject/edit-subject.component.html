@@ -1,0 +1,99 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title class="view-card-title">
+      <h1>{{ pageTitle }}</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form novalidate [formGroup]="subjectForm" (ngSubmit)="saveSubject()">
+    <mat-toolbar style="background-color: #fff">
+      <mat-toolbar-row>
+        <span class="title-spacer"></span>
+
+        <mat-card-actions>
+          <button
+            mat-mini-fab
+            class="primary"
+            style="margin-right: 10px; background-color: darkgray"
+            type="submit"
+            [disabled]="!subjectForm.valid"
+          >
+            <mat-icon>save</mat-icon>
+          </button>
+          <button
+            mat-mini-fab
+            class=""
+            style="margin-right: 10px"
+            [routerLink]="['/admin/editSubject/', currentCourseId]"
+          >
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-card-actions>
+      </mat-toolbar-row>
+    </mat-toolbar>
+
+    <mat-card-content>
+      <div class="form-card">
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Subject title"
+            formControlName="subjectName"
+          />
+          <mat-error *ngIf="subjectNameControl?.hasError('required')">
+            Subject name is <strong>required</strong>
+          </mat-error>
+          <mat-error *ngIf="subjectNameControl?.hasError('minlength')">
+            Subject name must contain at least <strong>3 characters</strong>
+          </mat-error>
+          <mat-error *ngIf="subjectNameControl?.hasError('maxlength')">
+            Subject name must contain at most <strong>250 characters</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="form-field-90">
+          <input
+            matInput
+            type="text"
+            autocomplete="off"
+            placeholder="Subject hometask"
+            formControlName="subjectHometask"
+          />
+          <mat-error *ngIf="subjectHometaskControl?.hasError('minlength')">
+            Subject hometask must contain at least <strong>3 characters</strong>
+          </mat-error>
+          <mat-error *ngIf="subjectHometaskControl?.hasError('maxlength')">
+            Subject hometask must contain at most
+            <strong>500 characters</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="form-field-90">
+          <textarea
+            matInput
+            placeholder="Subject text"
+            formControlName="subjectText"
+            [matTextareaAutosize]="true"
+          ></textarea>
+          <mat-error *ngIf="subjectTextControl?.hasError('minlength')">
+            Subject text must contain at least <strong>3 characters</strong>
+          </mat-error>
+          <mat-error *ngIf="subjectTextControl?.hasError('maxlength')">
+            Subject text must contain at most
+            <strong>4000 characters</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="form-field-50">
+          <mat-label>Course</mat-label>
+          <mat-select formControlName="courseId">
+            <mat-option *ngFor="let course of courses" [value]="course.id">{{
+              course.courseName
+            }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+  </form>
+</mat-card>
