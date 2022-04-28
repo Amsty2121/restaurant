@@ -1,22 +1,19 @@
-import { AccountService } from './../../_services/account.service';
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AccountService } from 'src/app/_services/account.service';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css'],
 })
-export class AdminComponent implements AfterViewInit {
+export class AdminComponent implements OnInit {
   username!: string | null;
   constructor(
     private accountService: AccountService,
-    private cdref: ChangeDetectorRef
   ) {}
 
-  ngAfterViewInit(): void {
+  ngOnInit(): void {
     this.username = localStorage.getItem('userName');
-    this.cdref.detectChanges();
   }
 
   logout() {

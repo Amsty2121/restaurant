@@ -1,5 +1,3 @@
-import { IngredientGridRow } from './../../../_models/Ingredients/IngredientGridRow';
-import { IngredientService } from './../../../_services/ingredient.service';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { PagedResult } from 'src/app/_infrastructure/models/PagedResult';
 import { TableColumn } from 'src/app/_infrastructure/models/TableColumn';
@@ -72,7 +70,6 @@ export class TableListComponent implements AfterViewInit {
     this.displayedColumns = this.tableColumns.map((column) => column.name);
     this.filterForm = this.formBuilder.group({
       tableDescription: [''],
-
     });
   }
 

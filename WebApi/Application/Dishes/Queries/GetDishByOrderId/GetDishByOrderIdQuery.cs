@@ -29,7 +29,7 @@ namespace Application.Dishes.Queries.GetDishByOrderId
         public async Task<Dish> Handle(GetDishByOrderIdQuery request,
             CancellationToken cancellationToken)
         {
-            var order = await _orderRepository.GetByIdWithInclude(request.OrderId, x => x.Dish);
+	        var order = await _orderRepository.GetByIdWithInclude(request.OrderId, x => x.Dish);
             
             return await _dishRepository.GetById(order.DishId);
         }

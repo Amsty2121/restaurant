@@ -60,9 +60,7 @@ export class LoginComponent implements OnInit {
 
         localStorage.setItem(
           'userName',
-          deserializedToken[
-            'http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name'
-          ]
+          userLogin.username
         );
         localStorage.setItem('userRole', userRole);
 

@@ -11,6 +11,16 @@
 
         <mat-card-actions>
           <button
+          mat-mini-fab
+          class="primary"
+          style="margin-right: 10px; background-color: darkgray"
+          type="submit"
+          [disabled]="!dishForm.valid"
+        >
+          <mat-icon>save</mat-icon>
+        </button>
+
+          <button
             mat-mini-fab
             class=""
             style="margin-right: 10px"

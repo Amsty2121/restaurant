@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin/admin.component';
-import { CourseListComponent } from './courses/course-list/course-list/course-list.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
@@ -39,10 +38,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatRippleModule } from '@angular/material/core';
 import { UsersListComponent } from './users/user-list/user-list.component';
 import { ConfirmDialogComponent } from './shared/confirm-dialog/confirm-dialog.component';
-import { EditCourseComponent } from './courses/edit-course/edit-course.component';
 import { CreateUserComponent } from './users/create-user/create-user.component';
-import { SubjectsListComponent } from './subjects/subjects-list/subjects-list.component';
-import { EditSubjectComponent } from './subjects/edit-subject/edit-subject.component';
 import { DishListComponent } from './dishes/dish-list/dish-list.component';
 import { EditDishComponent } from './dishes/edit-dish/edit-dish.component';
 import { OrderListComponent } from './orders/order-list/order-list.component';
@@ -50,26 +46,25 @@ import { EditOrderComponent } from './orders/edit-order/edit-order.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { EditIngredientComponent } from './ingredients/edit-ingredient/edit-ingredient.component';
 import { DishComponent } from './dishes/dish/dish.component';
+import { TableListComponent } from './tables/table-list/table-list.component';
+import { EditTableComponent } from './tables/edit-table/edit-table.component';
 
 @NgModule({
   declarations: [
     AdminComponent,
-    CourseListComponent,
     UsersListComponent,
     ConfirmDialogComponent,
-    EditCourseComponent,
-    EditCourseComponent,
     UsersListComponent,
     CreateUserComponent,
-    SubjectsListComponent,
-    EditSubjectComponent,
     DishListComponent,
     EditDishComponent,
     OrderListComponent,
     EditOrderComponent,
     IngredientListComponent,
     EditIngredientComponent,
-    DishComponent
+    DishComponent,
+    TableListComponent,
+    EditTableComponent,
   ],
   imports: [
     CommonModule,

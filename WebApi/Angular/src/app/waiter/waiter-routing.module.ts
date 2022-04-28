@@ -5,7 +5,6 @@ import { OrderListComponent } from './orders/order-list/order-list.component';
 import { EditOrderComponent } from './orders/edit-order/edit-order.component';
 import { DishListComponent } from './dishes/dish-list/dish-list.component';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -14,6 +13,9 @@ const routes: Routes = [
       {
         path: 'order-list',
         component: OrderListComponent,
+        data: {
+          userRole: 'waiter',
+        },
       },
       {
         path: 'edit-order/:id',
@@ -23,18 +25,6 @@ const routes: Routes = [
         path: 'dish-list',
         component: DishListComponent,
       },
-      /*{
-        path: 'edit-table/:id',
-        component: EditTableComponent,
-      },
-      {
-        path: 'users',
-        component: UsersListComponent,
-      },
-      {
-        path: 'users/add',
-        component: CreateUserComponent,
-      },*/
     ],
   },
 ];

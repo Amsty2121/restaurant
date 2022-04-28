@@ -21,17 +21,17 @@ import { Table } from 'src/app/_models/Tables/Table';
 export class EditOrderComponent implements OnInit {
   pageTitle!: string;
   orderForm!: FormGroup;
-  dishes!:Dish[];
-  dish!:Dish;
-  kitchener!:Kitchener;
-  kitcheners!:Kitchener[];
-  waiter!:Waiter;
-  waiters!:Waiter[];
-  orderStatus!:OrderStatus;
-  orderStatuses!:OrderStatus[];
-  table!:Table;
-  tables!:Table[];
-
+  dishes!: Dish[];
+  dish!: Dish;
+  kitchener!: Kitchener;
+  kitcheners!: Kitchener[];
+  waiter!: Waiter;
+  waiters!: Waiter[];
+  orderStatus!: OrderStatus;
+  orderStatuses!: OrderStatus[];
+  table!: Table;
+  tables!: Table[];
+  userRole!: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -52,83 +52,46 @@ export class EditOrderComponent implements OnInit {
       }
     });
 
-    this.orderService
-      .getAllDishes()
-      .subscribe((dishes: Dish[]) => {
-        this.dishes = dishes;
-      });
+    this.orderService.getAllDishes().subscribe((dishes: Dish[]) => {
+      this.dishes = dishes;
+    });
 
-      this.orderService
+    this.orderService
       .getAllStatuses()
       .subscribe((orderStatuses: OrderStatus[]) => {
         this.orderStatuses = orderStatuses;
       });
 
-      this.orderService
+    this.orderService
       .getAllKitcheners()
       .subscribe((kitcheners: Kitchener[]) => {
         this.kitcheners = kitcheners;
       });
 
-      this.orderService
-      .getAllWaiters()
-      .subscribe((waiters: Waiter[]) => {
-        this.waiters = waiters;
-      });
+    this.orderService.getAllWaiters().subscribe((waiters: Waiter[]) => {
+      this.waiters = waiters;
+    });
 
-      this.orderService
-      .getAllTables()
-      .subscribe((tables: Table[]) => {
-        this.tables = tables;
-      });
+    this.orderService.getAllTables().subscribe((tables: Table[]) => {
+      this.tables = tables;
+    });
 
     this.orderForm = this.fb.group({
       id: [objectId],
       orderNrPortions: [
         '',
-        [
-          Validators.required,
-          Validators.min(0),
-          Validators.max(10)
-        ],
+        [Validators.required, Validators.min(0), Validators.max(10)],
       ],
-      orderDescription: [
-        '',
-        [
-          Validators.maxLength(500),
-        ],
-      ],
-      dishId: [
-        '',
-        [
-          Validators.required,
-        ],
-      ],
-      orderStatusId: [
-        '',
-        [
-          Validators.required,
-        ],
-      ],
-      tableId: [
-        '',
-        [
-          Validators.required,
-        ],
-      ],
-      waiterId: [
-        '',
-        [
-          Validators.required,
-        ],
-      ],
-      kitchenerId: [
-        '',
-        [
+      orderDescription: ['', [Validators.maxLength(500)]],
+      dishId: ['', [Validators.required]],
+      orderStatusId: ['', [Validators.required]],
+      tableId: ['', [Validators.required]],
+      waiterId: ['', [Validators.required]],
+      kitchenerId: ['', []],
+    });
 
-        ],
-      ],
-      
+    this.route.data.subscribe((data) => {
+      this.userRole = data.userRole;
     });
   }
 
@@ -179,6 +142,11 @@ export class EditOrderComponent implements OnInit {
   onSaveComplete(): void {
     // Reset the form to clear the flags
     this.orderForm.reset();
-    this.router.navigate(['/waiter/order-list']);
+
+    if (this.userRole && this.userRole === 'admin') {
+      this.router.navigate(['/admin/order-list']);
+    } else {
+      this.router.navigate(['/waiter/order-list']);
+    }
   }
 }

@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { PagedResult } from 'src/app/_infrastructure/models/PagedResult';
 import { TableColumn } from 'src/app/_infrastructure/models/TableColumn';
@@ -23,9 +24,9 @@ import { Order } from 'src/app/_models/Orders/Order';
   templateUrl: './order-list.component.html',
   styleUrls: ['./order-list.component.css'],
 })
-export class OrderListComponent implements AfterViewInit {
+export class OrderListComponent implements OnInit, AfterViewInit {
   pagedOrders!: PagedResult<OrderGridRow>;
-  
+
   tableColumns: TableColumn[] = [
     {
       name: 'Dish',
@@ -73,6 +74,8 @@ export class OrderListComponent implements AfterViewInit {
 
   requestFilters!: RequestFilters;
 
+  userRole!: string;
+
   @ViewChild(MatPaginator, { static: false }) paginator!: MatPaginator;
   @ViewChild(MatSort, { static: false }) sort!: MatSort;
 
@@ -81,6 +84,7 @@ export class OrderListComponent implements AfterViewInit {
     private formBuilder: FormBuilder,
     private dialog: MatDialog,
     private snackBar: MatSnackBar,
+    private route: ActivatedRoute
   ) {
     this.displayedColumns = this.tableColumns.map((column) => column.name);
     this.filterForm = this.formBuilder.group({
@@ -88,9 +92,16 @@ export class OrderListComponent implements AfterViewInit {
     });
   }
 
-  chosed?:number;
-  Chosed(value: Order):void{
-        this.chosed = value.id;}
+  ngOnInit(): void {
+    this.route.data.subscribe((data) => {
+      this.userRole = data.userRole;
+    });
+  }
+
+  chosed?: number;
+  Chosed(value: Order): void {
+    this.chosed = value.id;
+  }
 
   ngAfterViewInit() {
     this.loadOrdersFromApi();
@@ -183,7 +194,6 @@ export class OrderListComponent implements AfterViewInit {
       };
     }
   }
-
 
   private createFiltersFromSearchInput() {
     const filterValue = this.searchInput.value.trim();

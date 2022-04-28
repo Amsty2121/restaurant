@@ -1,18 +1,18 @@
-import { EditSubjectComponent } from './subjects/edit-subject/edit-subject.component';
-import { EditCourseComponent } from './courses/edit-course/edit-course.component';
+import { EditOrderComponent } from './../waiter/orders/edit-order/edit-order.component';
+import { OrderListComponent } from './../waiter/orders/order-list/order-list.component';
+import { EditTableComponent } from './tables/edit-table/edit-table.component';
 import { CreateUserComponent } from './users/create-user/create-user.component';
 import { UsersListComponent } from './users/user-list/user-list.component';
 import { AdminComponent } from './admin/admin.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SubjectsListComponent } from './subjects/subjects-list/subjects-list.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
-import {EditIngredientComponent} from './ingredients/edit-ingredient/edit-ingredient.component';
+import { EditIngredientComponent } from './ingredients/edit-ingredient/edit-ingredient.component';
 import { DishListComponent } from './dishes/dish-list/dish-list.component';
-import {EditDishComponent} from './dishes/edit-dish/edit-dish.component';
+import { EditDishComponent } from './dishes/edit-dish/edit-dish.component';
 
-import { CourseListComponent } from './courses/course-list/course-list/course-list.component';
 import { DishComponent } from './dishes/dish/dish.component';
+import { TableListComponent } from './tables/table-list/table-list.component';
 
 const routes: Routes = [
   {
@@ -40,10 +40,6 @@ const routes: Routes = [
         component: DishComponent,
       },
       {
-        path: 'editCourse/:id',
-        component: EditCourseComponent,
-      },
-      {
         path: 'users',
         component: UsersListComponent,
       },
@@ -52,12 +48,26 @@ const routes: Routes = [
         component: CreateUserComponent,
       },
       {
-        path: 'coursesList/subjects/:id',
-        component: SubjectsListComponent,
+        path: 'tables-list',
+        component: TableListComponent,
       },
       {
-        path: 'editSubject/:id',
-        component: EditSubjectComponent,
+        path: 'edit-tables/:id',
+        component: EditTableComponent,
+      },
+      {
+        path: 'order-list',
+        component: OrderListComponent,
+        data: {
+          userRole: 'admin',
+        },
+      },
+      {
+        path: 'edit-order/:id',
+        component: EditOrderComponent,
+        data: {
+          userRole: 'admin',
+        },
       },
     ],
   },
