@@ -22,3 +22,39 @@ D:\Amdaris\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.Co
 D:\Amdaris\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.dll
 D:\Amdaris\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\ref\Domain.dll
 D:\Amdaris\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.pdb
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\Domain.deps.json
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\Domain.dll
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\ref\Domain.dll
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\Domain.pdb
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.dll
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\ref\Domain.dll
+D:\Amdaris\Новая папка\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\dimASUS\Desktop\Project\MyRestaturant\WebApi\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.AssemblyReference.cache
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\dimASUS\Desktop\New folder\restaurant\WebApi\Domain\obj\Debug\net5.0\Domain.pdb
