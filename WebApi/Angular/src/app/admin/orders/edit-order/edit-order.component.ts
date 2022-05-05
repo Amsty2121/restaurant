@@ -14,7 +14,7 @@ export class EditOrderComponent implements OnInit {
   pageTitle!: string;
   orderForm!: FormGroup;
   currentOrder!: Order;
-  currentOrderId!:number;
+  currentOrderId!: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -35,7 +35,6 @@ export class EditOrderComponent implements OnInit {
       }
     });
 
-
     /*this.coursesService.getAllCourses().subscribe((courses: Course[]) => {
       this.courses = courses;
     });*/
@@ -47,10 +46,10 @@ export class EditOrderComponent implements OnInit {
         '',
         [Validators.minLength(0), Validators.maxLength(500)],
       ],
-      orderNrPortions: ['', [Validators.pattern("^[0-9]*$")]],
+      orderNrPortions: ['', [Validators.pattern('^[0-9]*$')]],
       orderStatusId: [''],
       tableId: [''],
-      dishId: [''],    
+      dishId: [''],
     });
   }
 
@@ -74,10 +73,7 @@ export class EditOrderComponent implements OnInit {
   onSaveComplete(): void {
     // Reset the form to clear the flags
     this.orderForm.reset();
-    this.router.navigate([
-      '/admin/ordersList/orders/',
-      this.currentOrderId,
-    ]);
+    this.router.navigate(['/admin/ordersList/orders/', this.currentOrderId]);
   }
 
   get orderIdControl() {
@@ -97,5 +93,11 @@ export class EditOrderComponent implements OnInit {
   }
   get dishId() {
     return this.orderForm.get('dishId');
+  }
+  get kitchenerId() {
+    return this.orderForm.get('kitchenerId');
+  }
+  get waiterId() {
+    return this.orderForm.get('waiterId');
   }
 }

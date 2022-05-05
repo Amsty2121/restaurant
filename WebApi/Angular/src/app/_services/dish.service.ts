@@ -7,8 +7,6 @@ import { identity, Observable } from 'rxjs';
 import { PaginatedRequest } from '../_infrastructure/models/PaginatedRequest';
 import { PagedResult } from '../_infrastructure/models/PagedResult';
 
-import { Professor } from '../_models/Professors/Professor';
-import { Group } from '../_models/Groups/Group';
 import { Ingredient } from '../_models/Ingredients/Ingredient';
 import { DishCategory } from '../_models/DishCategories/DishCategory';
 import { DishStatus } from '../_models/DishStatuses/DishStatus';
@@ -62,20 +60,18 @@ export class DishService {
   }
 
   updateDish(dish: Dish): Observable<Dish> {
-    return this.http.patch<Dish>(
-      this.baseUrl + 'dish/' + dish.id,
-      dish
-    );
+    return this.http.patch<Dish>(this.baseUrl + 'dish/' + dish.id, dish);
   }
 
   createDish(dish: Dish): Observable<Dish> {
     return this.http.post<Dish>(this.baseUrl + 'dish/', dish);
   }
 
-  getIngredientsByDishId(id:number) :Observable<Ingredient[]> {
-    return this.http.get<Ingredient[]>(this.baseUrl+'dish/'+id +'/ingredients');
+  getIngredientsByDishId(id: number): Observable<Ingredient[]> {
+    return this.http.get<Ingredient[]>(
+      this.baseUrl + 'dish/' + id + '/ingredients'
+    );
   }
-
 
   /*getIngredientsForDish(id: string | null): Observable<Dish[]> {
     return this.http.get<Dish[]>(

@@ -55,7 +55,7 @@ namespace Application.Orders.Queries.GetOrderById
 
             var orderStatus = await _orderStatusRepository.GetById(order.OrderStatusId);
             var table = await _tableRepository.GetById(order.TableId);
-            var waiter = await _waiterRepository.GetByIdWithInclude(order.TableId, x => x.UserDetails);
+            var waiter = await _waiterRepository.GetByIdWithInclude(table.WaiterId, x => x.UserDetails);
             
             
             string kitchenerName;

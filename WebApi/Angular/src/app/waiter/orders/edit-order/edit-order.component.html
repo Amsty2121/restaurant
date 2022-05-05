@@ -114,5 +114,20 @@
         >
       </mat-select>
     </mat-form-field>
+
+    <mat-form-field *ngIf="this.userRole && this.userRole === 'admin'" appearance="fill" class="form-field-50">
+      
+      <mat-label>Kitchener</mat-label>
+      
+      <mat-select formControlName="kitchenerId">
+        
+        <mat-option *ngFor="let kitchener of kitcheners" [value]="kitchener.id"
+          >{{ kitchener.firstName }} {{ kitchener.lastName }}</mat-option
+        >
+        
+      </mat-select>
+    
+    </mat-form-field>
+  
   </form>
 </mat-card>

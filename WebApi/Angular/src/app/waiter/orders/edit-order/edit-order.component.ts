@@ -87,7 +87,7 @@ export class EditOrderComponent implements OnInit {
       orderStatusId: ['', [Validators.required]],
       tableId: ['', [Validators.required]],
       waiterId: ['', [Validators.required]],
-      kitchenerId: ['', []],
+      kitchenerId: ['', [Validators.required]],
     });
 
     this.route.data.subscribe((data) => {
