@@ -1,4 +1,5 @@
-﻿using Domain.Entities.Authorization;
+﻿using System.Collections.Generic;
+using Domain.Entities.Authorization;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,17 +12,38 @@ namespace Persistence.Seed
 		{
 			if (!userManager.Users.Any())
 			{
-				var user = new User()
+				var users = new List<User>()
 				{
-					UserName = "admin",
+					new User()
+					{
+						UserName = "admin",
+					},
+					new User()
+					{
+						UserName = "notAssigned",
+					},
+					new User()
+					{
+						UserName = "kitchener1",
+					},
+					new User()
+					{
+						UserName = "waiter1",
+					},
+
+
 				};
 
-				var userInsertion = await userManager.CreateAsync(user, "Qwerty1!");
-
-				if (userInsertion.Succeeded)
+				foreach (var user in users)
 				{
-					await userManager.AddToRoleAsync(user, "admin");
+					var userInsertion = await userManager.CreateAsync(user, "Qwerty1!");
+
+					if (userInsertion.Succeeded)
+					{
+						await userManager.AddToRoleAsync(user, "admin");
+					}
 				}
+				
 			}
 		}
 	}

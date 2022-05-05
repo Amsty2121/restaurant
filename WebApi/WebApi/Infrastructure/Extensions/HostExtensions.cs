@@ -7,6 +7,8 @@ using Microsoft.Extensions.Logging;
 using Persistence;
 using Persistence.Seed;
 using System;
+using System.Collections.Generic;
+using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 using Application.Common.Interfaces;
 using Domain.Entities;
@@ -30,7 +32,7 @@ namespace WebApi.Infrastructure.Extensions
 
 					await RolesSeed.Seed(rolesManager);
 					await UsersSeed.Seed(userManager);
-					
+					await DataSeed.Seed(context);
 				}
 				catch (Exception ex)
 				{

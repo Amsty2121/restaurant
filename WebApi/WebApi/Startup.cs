@@ -51,9 +51,9 @@ namespace WebApi
                 x.AddProfile(new RoleMappingProfile());
             });
             services.AddIdentity<User, Role>(options =>
-                {
-                    options.Password.RequiredLength = 8;
-                })
+            {
+                options.Password.RequiredLength = 8;
+            })
                 .AddEntityFrameworkStores<AppDbContext>();
 
             var authOptions = services.ConfigureAuthOptions(Configuration);
@@ -64,23 +64,23 @@ namespace WebApi
             services.AddMediatR(typeof(InsertedIngredientDto).GetTypeInfo().Assembly);
 
             services.AddSingleton(mapperConfig.CreateMapper());
-            
+
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            
-                services.AddDbContext<AppDbContext>();
+
+            services.AddDbContext<AppDbContext>();
             /*services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(
                     "Persist Security Info=False;Integrated Security=true;Initial Catalog=MyRestaurant;Server=DESKTOP-1P5LPV2"));
             */
             services.AddMediatR(typeof(Startup).GetTypeInfo().Assembly);
-            
+
             services.AddScoped(typeof(IDishUnitOfWork), typeof(DishUnitOfWork));
 
             services.AddControllers();
-            
+
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
             );
@@ -92,13 +92,16 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-	        using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
-	        {
-		        scope.ServiceProvider.GetService<AppDbContext>().Database.Migrate();
-	        }
+            using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                scope.ServiceProvider.GetService<AppDbContext>().Database.Migrate();
+                //scope.ServiceProvider.GetService<AppDbContext>().Database.
+            }
 
             if (env.IsDevelopment())
             {
+                
+	            //HostExtensions.SeedData(env);
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi v1"));
