@@ -1,18 +1,19 @@
 ﻿using Application.Common.Interfaces;
-using Common.Dto.DishStatuses;
 using Domain.Entities;
 using Domain.Exceptions;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
+using Common.Dto.DishCategories;
+using Common.Dto.DishStatuses;
 
-namespace Application.DishStatuses
+namespace Application.DishStatuses.Commands.InsertDishStatus
 {
-    public class InsertDishStatusCommand : IRequest<DishStatus> 
+    public class InsertDishStatusCommand : IRequest<DishStatus>
     {
         public InsertDishStatusDto Dto { get; set; }
     }
-
+    
     public class InsertDishStatusCommandHandler : IRequestHandler<InsertDishStatusCommand, DishStatus>
     {
         private readonly IGenericRepository<DishStatus> _dishStatusRepository;
@@ -24,7 +25,7 @@ namespace Application.DishStatuses
 
         public async Task<DishStatus> Handle(InsertDishStatusCommand request, CancellationToken cancellationToken)
         {
-            DishStatus dishStatus = await _dishStatusRepository.FirstOrDefault(x => x.DishStatusName == request.Dto.DishStatusName);
+            var dishStatus = await _dishStatusRepository.FirstOrDefault(x => x.DishStatusName == request.Dto.DishStatusName);
             if (dishStatus != null)
             {
                 throw new EntityAlreadyExistsException("This DishStatus already exists");

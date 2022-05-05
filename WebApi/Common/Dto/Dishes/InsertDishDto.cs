@@ -15,8 +15,14 @@ namespace Common.Dto.Dishes
 
 		[StringLength(500, MinimumLength = 0, ErrorMessage = "Invalid DishDescription length")]
         public string DishDescription { get; set; }
+
+        [Required]
         public int DishStatusId { get; set; }
+
+        [Required]
         public int DishCategoryId { get; set; }
+
+        [Required]
         public ICollection<int> IngredientsId { get; set; }
     }
 }

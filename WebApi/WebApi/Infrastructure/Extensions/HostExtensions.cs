@@ -8,6 +8,8 @@ using Persistence;
 using Persistence.Seed;
 using System;
 using System.Threading.Tasks;
+using Application.Common.Interfaces;
+using Domain.Entities;
 
 namespace WebApi.Infrastructure.Extensions
 {
@@ -26,10 +28,8 @@ namespace WebApi.Infrastructure.Extensions
 
 					await context.Database.MigrateAsync();
 
-
 					await UsersSeed.Seed(userManager);
 					await RolesSeed.Seed(rolesManager);
-
 				}
 				catch (Exception ex)
 				{

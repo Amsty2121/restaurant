@@ -1,0 +1,805 @@
+﻿++Solution 'WebApi' ‎(6 of 6 projects)
+i:{00000000-0000-0000-0000-000000000000}:WebApi.sln
+++Src
+i:{00000000-0000-0000-0000-000000000000}:Src
+++Presentation
+i:{4f43c9fa-971c-4b09-a3d1-6cc2627adf5d}:Presentation
+++WebApi
+i:{205b310c-19c7-434a-89d2-7c75168169c0}:WebApi
+++Connected Services 
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1300
+++Dependencies
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1299
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:>652
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:>1129
+i:{08212373-e2bc-4406-a293-01c098c8665d}:>653
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:>651
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:>1128
+++Properties
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\properties\
+++Controllers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\
+++AccountController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\accountcontroller.cs
+++AdminController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\admincontroller.cs
+++BaseController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\basecontroller.cs
+++DishCategoryController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\dishcategorycontroller.cs
+++DishController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\dishcontroller.cs
+++DishStatusController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\dishstatuscontroller.cs
+++IngredientController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\ingredientcontroller.cs
+++IngredientStatusController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\ingredientstatuscontroller.cs
+++KitchenerController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\kitchenercontroller.cs
+++OrderController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\ordercontroller.cs
+++OrderStatusController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\orderstatuscontroller.cs
+++RoleController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\rolecontroller.cs
+++TableController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\tablecontroller.cs
+++TableStatusController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\tablestatuscontroller.cs
+++UserController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\usercontroller.cs
+++WaiterController.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\controllers\waitercontroller.cs
+++Infrastructure
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\infrastructure\bin\debug\net5.0\infrastructure.dll
+i:{4f43c9fa-971c-4b09-a3d1-6cc2627adf5d}:Infrastructure
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\infrastructure\bin\debug\net5.0\infrastructure.dll
+i:{8c3f4970-0cb3-4974-b921-ef1fbfb8f0ed}:Infrastructure
+++Mappings
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\
+++appsettings.json
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\appsettings.json
+++Program.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\program.cs
+++Startup.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\startup.cs
+++No service dependencies discovered
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1301
+++Analyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:analyzers
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:analyzers
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:analyzers
+i:{08212373-e2bc-4406-a293-01c098c8665d}:analyzers
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:analyzers
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:analyzers
+++Frameworks
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:frameworks
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:frameworks
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:frameworks
+i:{08212373-e2bc-4406-a293-01c098c8665d}:frameworks
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:frameworks
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:frameworks
+++Packages
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:packages
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:packages
+i:{08212373-e2bc-4406-a293-01c098c8665d}:packages
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:packages
+++Projects
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:projects
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:projects
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:projects
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:projects
+++launchSettings.json
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\properties\launchsettings.json
+++Configurations
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\configurations\
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\
+++Extensions
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\extensions\
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\extensions\
+++Middlewares
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\middlewares\
+++DishCategoryMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\dishcategorymappingprofile.cs
+++DishMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\dishmappingprofile.cs
+++DishStatusMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\dishstatusmappingprofile.cs
+++IngredientMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\ingredientmappingprofile.cs
+++IngredientStatusMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\ingredientstatusmappingprofile.cs
+++KitchenerMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\kitchenermappingprofile.cs
+++OrderMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\ordermappingprofile.cs
+++OrderStatusMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\orderstatusmappingprofile.cs
+++RoleMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\rolemappingprofile.cs
+++TableMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\tablemappingprofile.cs
+++TableStatusMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\tablestatusmappingprofile.cs
+++WaiterMappingProfile.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\mappings\waitermappingprofile.cs
+++appsettings.Development.json
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:c:\users\dimasus\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\microsoft.netcore.app
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\microsoft.netcore.app
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:c:\users\dimasus\desktop\new folder\restaurant\webapi\infrastructure\microsoft.netcore.app
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\microsoft.netcore.app
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\microsoft.netcore.app
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\microsoft.netcore.app
+++MediatR (9.0.0)
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1366
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:>1339
+++MediatR.Extensions.Microsoft.DependencyInjection (9.0.0)
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1369
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:>1343
+++Microsoft.AspNetCore.Authentication.JwtBearer (5.0.11)
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1368
+++Microsoft.AspNetCore.Mvc.NewtonsoftJson (5.0.10)
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1367
+++Microsoft.EntityFrameworkCore.Design (5.0.10)
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1364
+++Swashbuckle.AspNetCore (5.6.3)
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:>1365
+++Common
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\bin\debug\net5.0\common.dll
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\bin\debug\net5.0\common.dll
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\bin\debug\net5.0\common.dll
+i:{17dc110c-2eb7-4a78-b5e3-3a5b98f63cec}:Common
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\common\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\bin\debug\net5.0\common.dll
+++Persistence
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\bin\debug\net5.0\persistence.dll
+i:{8c3f4970-0cb3-4974-b921-ef1fbfb8f0ed}:Persistence
+++AuthOptions.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\configurations\authoptions.cs
+++HostExtensions.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\extensions\hostextensions.cs
+++MiddlewareExtensions.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\extensions\middlewareextensions.cs
+++ServiceExtensions.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\extensions\serviceextensions.cs
+++ErrorDetails.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\middlewares\errordetails.cs
+++ErrorHandlingMiddleware.cs
+i:{d590d6c0-fd3d-42db-9e49-46c45b68b6ef}:c:\users\dimasus\desktop\new folder\restaurant\webapi\webapi\infrastructure\middlewares\errorhandlingmiddleware.cs
+++Constants
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\constants\
+++Seed
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\seed\
+++UnitsOfWork
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\unitsofwork\
+++AppDbContext.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\appdbcontext.cs
+++GenericRepository.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\genericrepository.cs
+++DishCategoryConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\dishcategoryconfig.cs
+++DishConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\dishconfig.cs
+++DishIngredientConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\dishingredientconfig.cs
+++IngredientConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\ingredientconfig.cs
+++OrderConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\orderconfig.cs
+++TableConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\tableconfig.cs
+++UserDetailsConfig.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\configurations\userdetailsconfig.cs
+++SchemaConstants.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\constants\schemaconstants.cs
+++QueryableExtensions.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\extensions\queryableextensions.cs
+++RolesSeed.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\seed\rolesseed.cs
+++UsersSeed.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\seed\usersseed.cs
+++DishUnitOfWork.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\unitsofwork\dishunitofwork.cs
+++Microsoft.EntityFrameworkCore (5.0.10)
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:>1338
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.10)
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:>1342
+++Microsoft.EntityFrameworkCore.Tools (5.0.10)
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:>1347
+++System.Linq.Dynamic.Core (1.2.13)
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:>1345
+++Application
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\bin\debug\net5.0\application.dll
+i:{1c7a5f3a-26f3-4722-983e-988f234edbfa}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\bin\debug\net5.0\application.dll
+i:{17dc110c-2eb7-4a78-b5e3-3a5b98f63cec}:Application
+++Core
+i:{4f43c9fa-971c-4b09-a3d1-6cc2627adf5d}:Core
+++Domain
+i:{17dc110c-2eb7-4a78-b5e3-3a5b98f63cec}:Domain
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\bin\debug\net5.0\domain.dll
+++Entities
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\
+++Exceptions
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\exceptions\
+++Authorization
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\
+++BaseEntity.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\baseentity.cs
+++Dish.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\dish.cs
+++DishCategory.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\dishcategory.cs
+++DishIngredient.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\dishingredient.cs
+++DishStatus.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\dishstatus.cs
+++Ingredient.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\ingredient.cs
+++IngredientStatus.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\ingredientstatus.cs
+++Kitchener.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\kitchener.cs
+++Order.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\order.cs
+++OrderStatus.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\orderstatus.cs
+++Table.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\table.cs
+++TableStatus.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\tablestatus.cs
+++UserDetails.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\userdetails.cs
+++Waiter.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\waiter.cs
+++EntityAlreadyExistsException.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\exceptions\entityalreadyexistsexception.cs
+++EntityDoesNotExist.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\exceptions\entitydoesnotexist.cs
+++Microsoft.AspNetCore.Identity.EntityFrameworkCore (5.0.10)
+i:{08212373-e2bc-4406-a293-01c098c8665d}:>1336
+++Role.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\role.cs
+++RoleClaim.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\roleclaim.cs
+++User.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\user.cs
+++UserClaim.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\userclaim.cs
+++UserLogin.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\userlogin.cs
+++UserRole.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\userrole.cs
+++UserToken.cs
+i:{08212373-e2bc-4406-a293-01c098c8665d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\domain\entities\authorization\usertoken.cs
+++Dto
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\
+++Models
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\
+++PasswordHasher.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\passwordhasher.cs
+++Admins
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\admins\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\admins\
+++DishCategories
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\
+++Dishes
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\
+++DishStatuses
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\
+++Ingredients
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\
+++IngredientStatuses
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredientstatuses\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\
+++Kitcheners
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\
+++Orders
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\
+++OrderStatuses
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orderstatuses\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\
+++Roles
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\roles\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\roles\
+++Tables
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\
+++TableStatuses
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tablestatuses\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\
+++User
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\user\
+++Waiters
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\waiters\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\
+++PagedRequest
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\pagedrequest\
+++InsertAdminDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\admins\insertadmindto.cs
+++GetDishCategoriesListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\getdishcategorieslistdto.cs
+++GetDishCategoryDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\getdishcategorydto.cs
+++InsertDishCategoryDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\insertdishcategorydto.cs
+++InsertedDishCategoryDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\inserteddishcategorydto.cs
+++UpdatedDishCategoryDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\updateddishcategorydto.cs
+++UpdateDishCategoryDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishcategories\updatedishcategorydto.cs
+++GetDishDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\getdishdto.cs
+++GetDishListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\getdishlistdto.cs
+++GetDishPagedDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\getdishpageddto.cs
+++InsertDishDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\insertdishdto.cs
+++InsertedDishDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\inserteddishdto.cs
+++UpdatedDishDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\updateddishdto.cs
+++UpdateDishDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishes\updatedishdto.cs
+++GetDishStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\getdishstatusdto.cs
+++GetDishStatusesListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\getdishstatuseslistdto.cs
+++GetDishStatusPagedDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\getdishstatuspageddto.cs
+++InsertDishStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\insertdishstatusdto.cs
+++InsertedDishStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\inserteddishstatusdto.cs
+++GetIngredientDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\getingredientdto.cs
+++GetIngredientListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\getingredientlistdto.cs
+++GetIngredientPagedDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\getingredientpageddto.cs
+++InsertedIngredientDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\insertedingredientdto.cs
+++InsertIngredientDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\insertingredientdto.cs
+++UpdatedIngredientDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\updatedingredientdto.cs
+++UpdateIngredientDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredients\updateingredientdto.cs
+++GetIngredientStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredientstatuses\getingredientstatusdto.cs
+++GetIngredientStatusesListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredientstatuses\getingredientstatuseslistdto.cs
+++GetIngredientStatusPagedDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredientstatuses\getingredientstatuspageddto.cs
+++InsertedIngredientStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredientstatuses\insertedingredientstatusdto.cs
+++InsertIngredientStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\ingredientstatuses\insertingredientstatusdto.cs
+++AssignedKitchenerToDIshOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\assignedkitchenertodishorderdto.cs
+++AssignKitchenerToDIshOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\assignkitchenertodishorderdto.cs
+++GetKitchenerDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\getkitchenerdto.cs
+++GetKitchenerListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\getkitchenerlistdto.cs
+++InsertedKitchenerDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\insertedkitchenerdto.cs
+++InsertKitchenerDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\kitcheners\insertkitchenerdto.cs
+++GetOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\getorderdto.cs
+++GetOrderListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\getorderlistdto.cs
+++InsertedOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\insertedorderdto.cs
+++InsertOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\insertorderdto.cs
+++OrdersWithStatusesTablesAndWaiters.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\orderswithstatusestablesandwaiters.cs
+++OrderUpdating.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\orderupdating.cs
+++OrderWithStatusTableAndWaiter.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\orderwithstatustableandwaiter.cs
+++UpdatedOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\updatedorderdto.cs
+++UpdateOrderDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orders\updateorderdto.cs
+++GetOrderStatusDtoDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orderstatuses\getorderstatusdtodto.cs
+++GetOrderStatusesListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orderstatuses\getorderstatuseslistdto.cs
+++GetOrderStatusPagedDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orderstatuses\getorderstatuspageddto.cs
+++InsertedOrderStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orderstatuses\insertedorderstatusdto.cs
+++InsertOrderStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\orderstatuses\insertorderstatusdto.cs
+++GetRolesListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\roles\getroleslistdto.cs
+++GetTableDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\gettabledto.cs
+++GetTableListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\gettablelistdto.cs
+++InsertedTableDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\insertedtabledto.cs
+++InsertTableDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\inserttabledto.cs
+++UpdatedTableDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\updatedtabledto.cs
+++UpdateTableDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tables\updatetabledto.cs
+++GetTableStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tablestatuses\gettablestatusdto.cs
+++GetTableStatusesListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tablestatuses\gettablestatuseslistdto.cs
+++InsertedTableStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tablestatuses\insertedtablestatusdto.cs
+++InsertTableStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\tablestatuses\inserttablestatusdto.cs
+++UserDataDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\user\userdatadto.cs
+++UserForLoginDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\user\userforlogindto.cs
+++GetWaiterDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\waiters\getwaiterdto.cs
+++GetWaiterListDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\waiters\getwaiterlistdto.cs
+++InsertedWaiterDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\waiters\insertedwaiterdto.cs
+++InsertWaiterDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\waiters\insertwaiterdto.cs
+++Filter.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\pagedrequest\filter.cs
+++FilterLogicalOperators.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\pagedrequest\filterlogicaloperators.cs
+++PagedRequest.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\pagedrequest\pagedrequest.cs
+++PaginatedResult.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\pagedrequest\paginatedresult.cs
+++RequestFilters.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\models\pagedrequest\requestfilters.cs
+++Users
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\users\
+++Commands
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\admins\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\commands\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\
+++Interfaces
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\common\interfaces\
+++Queries
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\roles\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\users\queries\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\
+++InsertDishStatusCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\insertdishstatus\insertdishstatuscommand.cs
+++InsertIngredientStatusCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\insertingredientstatuscommand.cs
+++InsertOrderStatusCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\insertorderstatuscommand.cs
+++InsertTableStatusCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\inserttablestatuscommand.cs
+++AutoMapper (10.1.1)
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:>1341
+++Microsoft.Data.SqlClient (3.0.0)
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:>1335
+++RegisterAdmin
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\admins\commands\registeradmin\
+++IDishUnitOfWork.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\common\interfaces\idishunitofwork.cs
+++IGenericRepository.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\common\interfaces\igenericrepository.cs
+++DeleteDishCategory
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\deletedishcategory\
+++InsertDishCategory
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\insertdishcategory\
+++UpdateDishCategory
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\updatedishcategory\
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\updatedishcategory\
+++GetCategoryByDishId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\getcategorybydishid\
+++GetDishCategoriesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\getdishcategorieslist\
+++GetDishCategoryById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\getdishcategorybyid\
+++DeleteDish
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\deletedish\
+++InsertDish
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\insertdish\
+++UpdateDish
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\updatedish\
+++GetDishById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishbyid\
+++GetDishByOrderId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishbyorderid\
+++GetDishesByTableId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishesbytableid\
+++GetDishesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdisheslist\
+++GetDishesPaged
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishespaged\
+++GetDishStatusById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\getdishstatusbyid\
+++GetDishStatusesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\getdishstatuseslist\
+++GetStatusByDishId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\getstatusbydishid\
+++DeleteIngredient
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\deleteingredient\
+++InsertIngredient
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\insertingredient\
+++UpdateIngredient
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\updateingredient\
+++GetIngredientById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientbyid\
+++GetIngredientPaged
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientpaged\
+++GetIngredientsByDishId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientsbydishid\
+++GetIngredientsList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientslist\
+++GetIngredientStatusById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\getingredientstatusbyid\
+++GetIngredientStatusesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\getingredientstatuseslist\
+++GetStatusByIngredientId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\getstatusbyingredientid\
+++AssignKitchenerToDIshOrder
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\commands\assignkitchenertodishorder\
+++RegisterKitchener
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\commands\registerkitchener\
+++GetKitchenerById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\getkitchenerbyid\
+++GetKitchenerByOrderId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\getkitchenerbyorderid\
+++GetKitchenersList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\getkitchenerslist\
+++DeleteOrder
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\deleteorder\
+++InsertOrder
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\insertorder\
+++UpdateOrder
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\updateorder\
+++GetOrderById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getorderbyid\
+++GetOrdersByTableId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getordersbytableid\
+++GetOrdersList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getorderslist\
+++GetOrdersPaged
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getorderspaged\
+++GetOrderStatusById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\getorderstatusbyid\
+++GetOrderStatusesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\getorderstatuseslist\
+++GetStatusByOrderId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\getstatusbyorderid\
+++GetRolesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\roles\queries\getroleslist\
+++DeleteTable
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\deletetable\
+++InsertTable
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\inserttable\
+++UpdateTable
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\updatetable\
+++GetTableById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablebyid\
+++GetTableByOrderId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablebyorderid\
+++GetTableList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablelist\
+++GetTablePaged
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablepaged\
+++GetStatusByTableId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\getstatusbytableid\
+++GetTableStatusById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\gettablestatusbyid\
+++GetTableStatusesList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\gettablestatuseslist\
+++UsernameAlreadyExists
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\users\queries\usernamealreadyexists\
+++RegisterWaiter
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\commands\registerwaiter\
+++GetWaiterById
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterbyid\
+++GetWaiterByOrderId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterbyorderid\
+++GetWaiterByTableId
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterbytableid\
+++GetWaitersList
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterslist\
+++RegisterAdminCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\admins\commands\registeradmin\registeradmincommand.cs
+++DeleteDishCategoryCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\deletedishcategory\deletedishcategorycommand.cs
+++InsertDishCategoryCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\insertdishcategory\insertdishcategorycommand.cs
+++UpdateDishCategoryCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\commands\updatedishcategory\updatedishcategorycommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\updatedishcategory\updatedishcategorycommand.cs
+++GetCategoryByDishIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\getcategorybydishid\getcategorybydishidquery.cs
+++GetDishCategoriesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\getdishcategorieslist\getdishcategorieslistquery.cs
+++GetDishCategoryByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishcategories\queries\getdishcategorybyid\getdishcategorybyidquery.cs
+++DeleteDishCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\deletedish\deletedishcommand.cs
+++InsertDishCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\insertdish\insertdishcommand.cs
+++UpdateDishCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\commands\updatedish\updatedishcommand.cs
+++GetDishByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishbyid\getdishbyidquery.cs
+++GetDishByOrderIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishbyorderid\getdishbyorderidquery.cs
+++GetDishesByTableIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishesbytableid\getdishesbytableidquery.cs
+++GetDishesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdisheslist\getdisheslistquery.cs
+++GetDishPagedQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishes\queries\getdishespaged\getdishpagedquery.cs
+++GetDishStatusByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\getdishstatusbyid\getdishstatusbyidquery.cs
+++GetDishStatusesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\getdishstatuseslist\getdishstatuseslistquery.cs
+++GetStatusByDishIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\queries\getstatusbydishid\getstatusbydishidquery.cs
+++DeleteIngredientCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\deleteingredient\deleteingredientcommand.cs
+++InsertIngredientCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\insertingredient\insertingredientcommand.cs
+++UpdateIngredientCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\commands\updateingredient\updateingredientcommand.cs
+++GetIngredientByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientbyid\getingredientbyidquery.cs
+++GetIngredientsPagedQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientpaged\getingredientspagedquery.cs
+++GetIngredientsByDishIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientsbydishid\getingredientsbydishidquery.cs
+++GetIngredientsListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredients\queries\getingredientslist\getingredientslistquery.cs
+++GetIngredientStatusByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\getingredientstatusbyid\getingredientstatusbyidquery.cs
+++GetIngredientStatusesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\getingredientstatuseslist\getingredientstatuseslistquery.cs
+++GetStatusByIngredientIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\ingredientstatuses\queries\getstatusbyingredientid\getstatusbyingredientidquery.cs
+++AssignKitchenerToDIshOrderCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\commands\assignkitchenertodishorder\assignkitchenertodishordercommand.cs
+++RegisterKitchenerCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\commands\registerkitchener\registerkitchenercommand.cs
+++GetKitchenerByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\getkitchenerbyid\getkitchenerbyidquery.cs
+++GetKitchenerByOrderIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\getkitchenerbyorderid\getkitchenerbyorderidquery.cs
+++GetKitchenersListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\kitcheners\queries\getkitchenerslist\getkitchenerslistquery.cs
+++DeleteOrderCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\deleteorder\deleteordercommand.cs
+++InsertOrderCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\insertorder\insertordercommand.cs
+++UpdateOrderCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\commands\updateorder\updateordercommand.cs
+++GetOrderByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getorderbyid\getorderbyidquery.cs
+++GetOrdersByTableIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getordersbytableid\getordersbytableidquery.cs
+++GetOrdersListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getorderslist\getorderslistquery.cs
+++GetOrderPagedQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orders\queries\getorderspaged\getorderpagedquery.cs
+++GetOrderStatusByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\getorderstatusbyid\getorderstatusbyidquery.cs
+++GetOrderStatusesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\getorderstatuseslist\getorderstatuseslistquery.cs
+++GetStatusByOrderIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\orderstatuses\queries\getstatusbyorderid\getstatusbyorderidquery.cs
+++GetRolesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\roles\queries\getroleslist\getroleslistquery.cs
+++DeleteTableCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\deletetable\deletetablecommand.cs
+++InsertTableCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\inserttable\inserttablecommand.cs
+++UpdateTableCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\commands\updatetable\updatetablecommand.cs
+++GetTableByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablebyid\gettablebyidquery.cs
+++GetTableByOrderIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablebyorderid\gettablebyorderidquery.cs
+++GetTableListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablelist\gettablelistquery.cs
+++GetTablePagedDto.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tables\queries\gettablepaged\gettablepageddto.cs
+++GetStatusByTableIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\getstatusbytableid\getstatusbytableidquery.cs
+++GetTableStatusByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\gettablestatusbyid\gettablestatusbyidquery.cs
+++GetTableStatusesListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\tablestatuses\queries\gettablestatuseslist\gettablestatuseslistquery.cs
+++UsernameAlreadyExistsQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\users\queries\usernamealreadyexists\usernamealreadyexistsquery.cs
+++RegisterWaiterCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\commands\registerwaiter\registerwaitercommand.cs
+++GetWaiterByIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterbyid\getwaiterbyidquery.cs
+++GetWaiterByOrderIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterbyorderid\getwaiterbyorderidquery.cs
+++GetWaiterByTableIdQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterbytableid\getwaiterbytableidquery.cs
+++GetWaitersListQuery.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\waiters\queries\getwaiterslist\getwaiterslistquery.cs
+++DeleteDishStatus
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\deletedishstatus\
+++DeleteDishStatusCommand.cs
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\deletedishstatus\deletedishstatuscommand.cs
+++InsertDishStatus
+i:{37e1714a-4079-4100-8698-e3bc24a6ba0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\application\dishstatuses\commands\insertdishstatus\
+++UpdateDishStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\updatedishstatusdto.cs
+++UpdatedDishStatusDto.cs
+i:{e3baa1b6-e7d9-4d61-aa06-e4ee41b39f0d}:c:\users\dimasus\desktop\new folder\restaurant\webapi\common\dto\dishstatuses\updateddishstatusdto.cs
+++DishStatusesSeed.cs
+++Migrations
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\migrations\
+++20220503214823_Initial.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\migrations\20220503214823_initial.cs
+++AppDbContextModelSnapshot.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\migrations\appdbcontextmodelsnapshot.cs
+++20220503214823_Initial.Designer.cs
+i:{02ab30d4-1dd7-469a-816a-443b4872abc2}:c:\users\dimasus\desktop\new folder\restaurant\webapi\persistence\migrations\20220503214823_initial.designer.cs

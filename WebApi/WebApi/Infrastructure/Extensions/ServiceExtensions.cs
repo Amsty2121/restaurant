@@ -31,7 +31,6 @@ namespace WebApi.Infrastructure.Extensions
                 };
             });
         }
-
         public static AuthOptions ConfigureAuthOptions(this IServiceCollection services, IConfiguration configuration)
         {
             var authOptionsConfigurationSection = configuration.GetSection("AuthOptions");
