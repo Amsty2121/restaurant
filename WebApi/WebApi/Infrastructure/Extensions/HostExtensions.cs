@@ -28,8 +28,9 @@ namespace WebApi.Infrastructure.Extensions
 
 					await context.Database.MigrateAsync();
 
-					await UsersSeed.Seed(userManager);
 					await RolesSeed.Seed(rolesManager);
+					await UsersSeed.Seed(userManager);
+					
 				}
 				catch (Exception ex)
 				{
